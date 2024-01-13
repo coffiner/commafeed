@@ -42,7 +42,7 @@ jobs:
 
       # Docker
       - name: Login to Container Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         if: ${{ matrix.java == '17' }}
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
